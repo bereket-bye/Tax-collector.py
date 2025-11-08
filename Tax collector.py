@@ -1,4 +1,4 @@
-print("Welcome to the Friendly Tax Calculator")
+print("Welcome to Bereket's Tax Calculator")
 user_income = float(input("Enter your total income in birr:"))
 
 def calculate_tax(income):
@@ -14,7 +14,7 @@ def calculate_tax(income):
         tax = (4000 - 2000) * 0.15 + (7000 - 4000) * 0.20 + (income - 7000) * 0.25
     elif income <= 14000:
         tax = (4000 - 2000) * 0.15 + (7000 - 4000) * 0.20 + (10000 - 7000) * 0.25 + (income - 10000) * 0.30
-    else:  # income > 14000
+    else:
         tax = (4000 - 2000) * 0.15 + (7000 - 4000) * 0.20 + (10000 - 7000) * 0.25 + (14000 - 10000) * 0.30 + (income - 14000) * 0.35
     
     net_income = income - tax
